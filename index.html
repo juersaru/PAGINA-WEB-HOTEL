@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel el Paraiso</title>
+    
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo hotel paraiso.png" alt="Logo Hotel el Paraiso" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h1>Bienvenido al Hotel El Paraíso</h1>
+        <p>Disfruta de una experiencia inolvidable en nuestro hotel de lujo.</p>
+        <img src="imagenes/fachada hotel paraiso.png" alt="Exterior del Hotel">
+        <p>El Hotel se encuentra  ubicado en la Ciudad de Neiva, en una de las áreas de mayor desarrollo comercial, financiero y turístico de la capital del Departamento del Huila</p>
+    </section>
+
+    <!-- Sección de Habitaciones -->
+    <section id="habitaciones">
+        <h2>Nuestras Habitaciones</h2>
+        <div class="habitacion">
+            <img src="imagenes/habitacion estandar.jpg" alt="Habitación Estándar">
+            <h3>Habitación Estándar</h3>
+            <p>La habitación Estándar cuenta con una cama cómoda y espaciosa, garantizando un buen descanso. 
+                Además, dispone de un escritorio amplio y bien iluminado, ideal para trabajar de manera 
+                eficiente durante su estancia. Esta habitación ofrece todo lo que un viajero necesita: confort, 
+                funcionalidad y una excelente conexión a internet para garantizar una estancia productiva y agradable</p>
+            <p>Precio: $90.000</p>
+            <div class="icon-container">
+                <img src="imagenes/comedor.png" alt="Cama">
+                <img src="imagenes/wifi.png" alt="Wi-Fi">
+                <img src="imagenes/ducha.png" alt="Escritorio">
+                <img src="imagenes/escritorio.png" alt="Ducha">
+                <img src="imagenes/cama.png" alt="Mesa">
+            </div>
+            <button onclick="window.location.href='#reserva'">Ver Reserva</button>
+        </div>
+        <div class="habitacion">
+            <img src="imagenes/habitacion estandar premium.png" alt="Habitación Estándar Premium">
+            <h3>Habitación Estándar Premium</h3>
+            <p>Habitación ejecutiva, diseñada pensando en las necesidades y comodidades de los viajeros más
+                exigentes, con un amplio escritorio y una cómoda silla ejecutiva además de una mesa comedor. 
+                Nuestra habitación ejecutiva ofrece el equilibrio perfecto entre trabajo y descanso.</p>
+            <p>Precio: $120.000</p>
+            <div class="icon-container">
+                <img src="imagenes/comedor.png" alt="Cama">
+                <img src="imagenes/wifi.png" alt="Wi-Fi">
+                <img src="imagenes/ducha.png" alt="Escritorio">
+                <img src="imagenes/escritorio.png" alt="Ducha">
+                <img src="imagenes/cama.png" alt="Mesa">
+            </div>
+            <button onclick="window.location.href='#reserva'">Ver Reserva</button>
+        </div>
+        <div class="habitacion">
+            <img src="imagenes/deluxe-rooms_1_orig.jpg" alt="Habitación Estándar Deluxe">
+            <h3>Habitación Estándar Deluxe</h3>
+            <p>Equipada con dos camas individuales y más de 40 metros cuadrados, perfecta para hospedarse con amigos o 
+                familiares. Se puede adaptar una cama adicional bajo solicitud previa. Diseñada para grupos deportivos, 
+                familiares o empresariales.</p>
+            <p>Precio: $140.000</p>
+            <div class="icon-container">
+                <img src="imagenes/comedor.png" alt="Cama">
+                <img src="imagenes/wifi.png" alt="Wi-Fi">
+                <img src="imagenes/ducha.png" alt="Escritorio">
+                <img src="imagenes/escritorio.png" alt="Ducha">
+                <img src="imagenes/cama.png" alt="Mesa">
+            </div>
+            <button onclick="window.location.href='#reserva'">Ver Reserva</button>
+        </div>
+             
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="imagenes/Hotel piscina.jpg" alt="Piscina del hotel">
+            <img src="imagenes/bar hotel.jpg" alt="Bar Hotel">
+            <img src="imagenes/restaurante hotel ii.avif" alt="Restaurante Hotel">
+            <img src="imagenes/header-spa.jpg" alt="Spa del hotel">
+        </div>
+    </section>
+
+    <!-- Sección de Reserva -->
+    <section id="reserva">
+        <h2>Reserva tu Estancia</h2>
+        <form action="reserva.php" method="POST" class="formulario-reserva">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="habitacion">Selecciona Habitación:</label>
+            <select id="habitacion" name="habitacion">
+                <option value="estandar">Habitación Estándar</option>
+                <option value="deluxe">Habitación Estándar Premium</option>
+                <option value="suite">Habitación Estándar Deluxe</option>
+            </select>
+
+            <label for="fecha-entrada">Fecha de Entrada:</label>
+            <input type="date" id="fecha-entrada" name="fecha_entrada" required>
+
+            <label for="fecha-salida">Fecha de Salida:</label>
+            <input type="date" id="fecha-salida" name="fecha_salida" required>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle 12 # 3-52, Ciudad Neiva Huila, Colombia</p>
+        <p>Teléfono: (+57) 3208142152</p>
+        <p>Email: info@hotelelparaiso.com</p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel El Paraíso. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
